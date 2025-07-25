@@ -2,26 +2,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'raleway',sans-serif;
+    font-family: 'Raleway';
 }
 header{
     text-align: center;
 }
 .OurRange h3#title{
     text-align: center;
-    font-size: 30px;
+    font-size: 32px;
     padding-block: 40px;
+    font-weight: 600;
 }
 .products{
     padding: 5px 40px;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(210px, 1fr));
-    gap: 20px;
+    place-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+}
+.products .product{
+    width: 245px;
+    height: 305px;
+
 }
 .products .product .img{
-    border-radius: 20px;
-    border: 1px solid red;
+    border-radius: 24px;
+    border: 1px solid #F7A1A3;
     overflow: hidden;
+    width: 213px;
+    height: 210px;
 }
 .products .product .img img{
     height: 100%;
@@ -29,12 +38,68 @@ header{
 }
 .products .product .product-name{
     text-align: center;
-    font-size: 16px;
+    font-size: 32px;
     padding-block: 10px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 footer{
     text-align: center;
     margin-top: 30px;
+}
+
+
+/* media query start */
+
+@media screen and (max-width:1440px) {
+    .OurRange{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .OurRange h3#title{
+    font-size: 30px;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    width: 834px;
+}
+.products .product .product-name{
+    font-size: 24px;
+    font-weight: 400;
+}
+}
+
+
+@media screen and (max-width:834px){
+   .OurRange h3#title{
+    font-size: 20px;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 393px;
+}
+.products .product .img{
+    width: 100px;
+    height: 103px;
+}
+.products .product .product-name{
+    font-size: 14px;
+    font-weight: 400;
+}
+.products .product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 125px;
+    height: 175px;
+}
 }
