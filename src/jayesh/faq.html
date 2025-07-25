@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQ Section</title>
+  <link rel="stylesheet" href="faq.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="faq-container">
+    <div class="faq-inner">
+      <h2 class="faq-heading">Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>What makes Kisan Udyog different from other natural product brands?</span>
+          <span class="faq-arrow">&#9662;</span>
+        </div>
+        <div class="faq-answer">
+          <p>Kisan Udyog sources directly from farmers, ensuring purity and quality in every product while supporting rural communities.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Are all products organic and chemical-free?</span>
+          <span class="faq-arrow">&#9662;</span>
+        </div>
+        <div class="faq-answer">
+          <p>Yes! All products are 100% natural, Ayurvedic, and free from harmful chemicals and preservatives.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>What makes Kisan Udyog different from other natural product brands?</span>
+          <span class="faq-arrow">&#9662;</span>
+        </div>
+        <div class="faq-answer">
+          <p>Kisan Udyog sources directly from farmers, ensuring purity and quality in every product while supporting rural communities.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Are all products organic and chemical-free?</span>
+          <span class="faq-arrow">&#9662;</span>
+        </div>
+        <div class="faq-answer">
+          <p>Yes! All products are 100% natural, Ayurvedic, and free from harmful chemicals and preservatives.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Are all products organic and chemical-free?</span>
+          <span class="faq-arrow">&#9662;</span>
+        </div>
+        <div class="faq-answer">
+          <p>Yes! All products are 100% natural, Ayurvedic, and free from harmful chemicals and preservatives.</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <script>
+    const questions = document.querySelectorAll('.faq-question');
+    questions.forEach(q => {
+      q.addEventListener('click', () => {
+        const answer = q.nextElementSibling;
+        const arrow = q.querySelector('.faq-arrow');
+        answer.classList.toggle('faq-answer-show');
+        arrow.classList.toggle('rotate');
+      });
+    });
+  </script>
+</body>
+</html>

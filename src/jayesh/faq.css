@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+}
+
+.faq-container {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.faq-inner {
+  width: 95%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.faq-heading {
+  font-size: 24px;
+  text-align: center;
+  color: #081609;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.faq-item {
+  background-color: #ffffff;             
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);  
+  overflow: hidden;
+  border: 1px solid #cceee7;            
+}
+
+.faq-question span {
+  font-weight: 600;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  background-color: #b0cac6;           
+  border-bottom: 1px solid #b3e6dc;     
+  transition: background-color 0.3s ease;
+}
+
+/*
+.faq-question:hover {
+  background-color: #b8f5ea;
+}
+*/
+
+.faq-arrow {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+  color: #2e7d32;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  background-color:#c9e5e1;             
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 20px;
+  color: #444;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.faq-answer-show {
+  max-height: 300px;
+  padding: 16px 20px;
+  border-top: 1px solid #d7e9e0;
+}
+
+
+@media (max-width: 768px) {
+  .faq-inner {
+    width: 90%;
+  }
+  
+  .faq-heading {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .faq-question {
+    font-size: 15px;
+    padding: 15px 18px;
+  }
+  
+  .faq-arrow {
+    font-size: 16px;
+  }
+  
+  .faq-answer {
+    font-size: 14px;
+    padding: 0 18px;
+  }
+  
+  .faq-answer-show {
+    padding: 14px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-inner {
+    width: 95%;
+  }
+  
+  .faq-heading {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .faq-question {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
+    padding: 12px 15px;
+  }
+  
+  .faq-arrow {
+    align-self: flex-end;
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  
+  .faq-answer {
+    font-size: 13px;
+    padding: 0 15px;
+  }
+  
+  .faq-answer-show {
+    padding: 12px 15px;
+  }
+}
