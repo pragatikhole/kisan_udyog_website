@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'raleway',sans-serif;
+}
+header{
+    text-align: center;
+}
+.OurRange h3#title{
+    text-align: center;
+    font-size: 30px;
+    padding-block: 40px;
+}
+.products{
+    padding: 5px 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(210px, 1fr));
+    gap: 20px;
+}
+.products .product .img{
+    border-radius: 20px;
+    border: 1px solid red;
+    overflow: hidden;
+}
+.products .product .img img{
+    height: 100%;
+    width: 100%;
+}
+.products .product .product-name{
+    text-align: center;
+    font-size: 16px;
+    padding-block: 10px;
+    font-weight: 600;
+}
+
+footer{
+    text-align: center;
+    margin-top: 30px;
+}
