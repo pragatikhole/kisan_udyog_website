@@ -2,10 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Raleway';
+    font-family: "Raleway";
+    font-style: normal;
 }
 header{
     text-align: center;
+}
+.main{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.OurRange{
+    max-width: 1400px;
+
 }
 .OurRange h3#title{
     text-align: center;
@@ -21,6 +33,9 @@ header{
     gap: 25px;
 }
 .products .product{
+            display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 245px;
     height: 305px;
 
@@ -61,7 +76,11 @@ footer{
     .OurRange h3#title{
     font-size: 30px;
 }
-
+.products .product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .products{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
