@@ -15,7 +15,7 @@ body {
     align-items: center;
     width: 100%;
     max-width: 1440px;
-    gap: 2rem;
+    gap: 1.5rem;
     margin: 0 auto;
     padding: 3rem 0px;
     box-sizing: border-box;
@@ -24,23 +24,39 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
 }
-.mission-card-container,.vision-card-container {
+.mission-card-container {
     position: relative;
     /* width: 100%; */
     max-width: 652px;
-    height: 324px;
+    height: fit-content;
     /* background-color: transparent; */
     border-radius: 15px;
     /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
     overflow: hidden;
+    border: 2px solid orange;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.vision-card-container {
+    position: relative;
+    /* width: 100%; */
+    max-width: 652px;
+    height: 343px;
+    /* background-color: transparent; */
+    border-radius: 15px;
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
+    overflow: hidden;
+    border: 2px solid orange;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 .about-us-card{
     position: relative;
+    border: 2px solid orange;
     width: 100%;
     max-width: 1328px;
     height: fit-content;
@@ -53,8 +69,6 @@ body {
     justify-content: flex-start;
     
 }
-
-
 .mission-card-container::before {
     content: ''; 
     position: absolute; 
@@ -99,11 +113,12 @@ body {
     z-index: 1;
 }
 
+
 .mission-content-area {
     position: relative;
     z-index: 2;
     color: white;
-    padding: 22px 30px;
+    padding: 30px 8px;
     max-width: 100%;
     text-align: left;
     background-color: rgba(0, 0, 0, 0.25);
@@ -113,8 +128,9 @@ body {
     position: relative;
     z-index: 2;
     color: white;
-    padding: 30px 30px;
+    padding: 32px 8px;
     max-width: 100%;
+    height: -webkit-fill-available;
     text-align: left;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 8px;
@@ -175,13 +191,13 @@ h3{
     margin-top: 0rem;
     border: none;
 }
-
 p {
     font-size: 24px;
     padding-left: 24px;
     padding-right: 24px;
     line-height: 1.3;
     color: black;
+    font-family: "Mulish", sans-serif;
 }
 .about-us-content-area li{
     font-family: "Mulish", sans-serif;
@@ -211,16 +227,21 @@ p {
     }
     .mission-card-container,.vision-card-container {
     max-width: 743px;
-    height: 260px;
-}
-.about-us-card::before{
+    height: fit-content;
+    }
+    .mission-card-container::before {
+    height: -webkit-fill-available;
+    }
+    .vision-card-container::before {
+    height: -webkit-fill-available;
+    }
+    .about-us-card::before{
+    height: -webkit-fill-available;
+    }
+    .about-us-card{
+    max-width: 756px;
     height: 504px;
-}
-.about-us-card{
-    width: 756px;
-    height: 504px;
-    
-}
+    }
 } 
 
 
@@ -230,40 +251,85 @@ p {
        display: flex;
        flex-direction: column;
        max-width: 1440px;
+       padding: 1.2rem;
     }
-    .container { 
+    .container {
         display: flex;
         flex-direction: column;
     }
     .mission-card-container,.vision-card-container {
     max-width: 743px;
-    height: 260px;
-}
-.about-us-card::before{
-    height: 504px;
-}
-.about-us-card{
-    width: 756px;
-    height: 504px;
-    
-}
+    height: fit-content;
+    }
+    .mission-card-container::before {
+    height: -webkit-fill-available;
+    }
+    .vision-card-container::before {
+    height: -webkit-fill-available;
+    }
+    .about-us-card::before{
+    height: -webkit-fill-available;
+    }
+    .about-us-card{
+    max-width: 756px;
+    height: fit-content;
+    }
+    .mission-content-area {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 32px 8px;
+    max-width: 100%;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    }
+    .vision-content-area {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 32px 8px;
+    max-width: 100%;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    }
+    .about-us-content-area{
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 32px 16px;
+    max-width: 100%;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    }
 } 
 
 
 /* For Mobile Phones: max-width: 600px */
 @media (max-width: 600px) {
+    .main-container{
+        padding: 1.2rem;
+    }
     .mission-card-container,.vision-card-container {
     max-width: 390px;
-    height: 248px;
-}
-.about-us-card::before{
-    height: 380px;
-}
-.about-us-card{
-    width: 390px;
-    height: 380px;
-}
-h1,h2 {
+    height: fit-content;
+    }
+    .mission-card-container::before {
+    height: -webkit-fill-available;
+    }
+    .vision-card-container::before {
+    height: -webkit-fill-available;
+    }
+    .about-us-card::before{
+    height: -webkit-fill-available;
+    }
+    .about-us-card{
+    max-width: 390px;
+    height: fit-content;
+    }
+    h1,h2 {
     font-size: 22px;
     color: #1C6D4B;
     font-weight: 600;
@@ -271,8 +337,8 @@ h1,h2 {
     align-items: center;
     padding-left: 8px;
     padding-right: 8px;
-}
-h3{
+  }
+  h3{
     font-size: 22px;
     color: #1C6D4B;
     font-weight: 600;
@@ -281,56 +347,57 @@ h3{
     padding-left: 8px;
     padding-right: 8px;
     margin-block-start: 25px; 
-     margin-block-end: 25px;
-}
-p{
+    margin-block-end: 25px;
+  }
+  p{
     font-size: 16px;
     padding-left: 8px;
     padding-right: 8px;
-}
-.mission-content-area {
+    font-family: "Mulish,sans-serif";
+  }
+  .mission-content-area {
     position: relative;
     z-index: 2;
     color: white;
-    padding: 35px 30px;
+    padding: 20px 8px;
     max-width: 100%;
     text-align: left;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 8px;
-}
-.vision-content-area {
+  }
+  .vision-content-area {
    position: relative;
     z-index: 2;
     color: white;
-    padding: 35px 30px;
+    padding: 20px 8px;
     max-width: 100%;
     text-align: left;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 8px;
-}
-.about-us-content-area{
+  }
+  .about-us-content-area{
     position: relative;
     z-index: 2;
     color: white;
-    padding: 46px 16px;
+    padding: 20px 8px;
     max-width: 100%;
     text-align: left;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 8px;
-}
-.about-us-content-area li{
+  }
+  .about-us-content-area li{
     font-family: "Mulish", sans-serif;
     font-size: 16px;
     line-height: 1.1;
     color: black;
     margin-bottom: 10px; 
-}
-.about-us-content-area ul{
+  }
+  .about-us-content-area ul{
     padding-left: 2rem;
     padding-right: 2.2rem;
     margin: 0;
-}
-.info-icon{
+  }
+  .info-icon {
     font-size: 0.7em;
     vertical-align: middle;
     margin-left: 10px;
@@ -348,20 +415,26 @@ p{
 /* For very small screens / landscape mobile (optional, fine-tuning) */
 @media (max-width: 400px) {
     .main-container{
-        padding: 1rem;
+        padding: 1.2rem;
     }
     .mission-card-container,.vision-card-container {
     max-width: 390px;
-    height: 248px;
-}
-.about-us-card::before{
-    height: 380px;
-}
-.about-us-card{
-    width: 360px;
-    height: 380px;
-}
-h1,h2 {
+    height: fit-content;
+    }
+    .mission-card-container::before {
+    height: -webkit-fill-available;
+    }
+    .vision-card-container::before {
+    height: -webkit-fill-available;
+    }
+    .about-us-card::before{
+    height: -webkit-fill-available;
+    }
+    .about-us-card{
+    max-width: 390px;
+    height: fit-content;
+    }
+    h1,h2 {
     font-size: 22px;
     color: #1C6D4B;
     font-weight: 600;
@@ -369,8 +442,8 @@ h1,h2 {
     align-items: center;
     padding-left: 8px;
     padding-right: 8px;
-}
-h3{
+    }
+    h3{
     font-size: 22px;
     color: #1C6D4B;
     font-weight: 600;
@@ -379,54 +452,53 @@ h3{
     padding-left: 8px;
     padding-right: 8px;
     margin-block-start: 25px; 
-     margin-block-end: 25px;
-}
-p{
+    margin-block-end: 25px;
+    }
+    p{
     font-size: 16px;
     padding-left: 8px;
     padding-right: 8px;
-}
-.mission-content-area {
+    }
+    .mission-content-area {
     position: relative;
     z-index: 2;
     color: white;
-    padding: 35px 30px;
+    padding: 20px 8px;
     max-width: 100%;
     text-align: left;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 8px;
-}
-.vision-content-area {
-   position: relative;
-    z-index: 2;
-    color: white;
-    padding: 35px 30px;
-    max-width: 100%;
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-}
-.about-us-content-area{
+    }
+    .vision-content-area {
     position: relative;
     z-index: 2;
     color: white;
-    padding: 46px 16px;
+    padding: 20px 8px;
     max-width: 100%;
     text-align: left;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 8px;
-}
-.about-us-content-area li{
+    }
+    .about-us-content-area{
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 20px 8px;
+    max-width: 100%;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    }
+    .about-us-content-area li{
     font-family: "Mulish", sans-serif;
     font-size: 16px;
     line-height: 1.1;
     color: black;
     margin-bottom: 10px; 
-}
-.about-us-content-area ul{
+    }
+    .about-us-content-area ul{
     padding-left: 2rem;
     padding-right: 2.2rem;
     margin: 0;
-}
-
+    }
 }
