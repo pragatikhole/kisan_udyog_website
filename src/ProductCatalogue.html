@@ -6,20 +6,28 @@
     <title>Our Bestsellers</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              mobile: "440px",
+              ipad: "834px",
+            },
+            fontFamily: {
+              raleway: ["Raleway", "sans-serif"],
+              mulish: ["Mulish", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&family=Raleway:wght@600&display=swap"
       rel="stylesheet"
     />
-
-    <style>
-      .font-raleway {
-        font-family: "Raleway", sans-serif;
-      }
-      .font-mulish {
-        font-family: "Mulish", sans-serif;
-      }
-    </style>
   </head>
   <body class="bg-white text-gray-800">
     <section class="max-w-7xl mx-auto px-4 py-10">
@@ -29,24 +37,53 @@
         Our Bestsellers
       </h2>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Product Card -->
+      <!-- Responsive Grid -->
+      <div class="grid grid-cols-1 mobile:grid-cols-2 ipad:grid-cols-3 gap-6">
+        <!-- Product Card (Repeat as needed) -->
         <div class="p-4 shadow-sm hover:shadow-lg transition">
           <div
-            class="bg-gray-200 border border-gray-500 rounded-lg w-full aspect-[379/240] p-6"
+            class="bg-gray-200 border border-gray-500 rounded-lg h-[240px] mb-4 p-6"
           ></div>
-
-          <h3
-            class="text-lg font-semibold font-raleway text-gray-800 mb-1 pt-4"
-          >
+          <h3 class="text-[24px] font-raleway font-semibold text-gray-800 mb-1">
             Kisan Jaggery
           </h3>
           <div class="flex items-center text-red-500 text-sm mb-1">
-            ⭐⭐⭐⭐☆ <span class="ml-2 text-gray-500">117 reviews</span>
+            ⭐⭐⭐⭐☆
+            <span class="ml-2 text-gray-500 text-[10px]">117 reviews</span>
           </div>
-          <p class="text-black font-mulish italic font-normal mb-4">₹ 350/kg</p>
+          <p
+            class="text-black font-mulish italic font-semibold text-[24px] mb-4"
+          >
+            ₹ 350/kg
+          </p>
           <button
-            class="w-full text-white py-2 rounded-lg font-mulish font-bold"
+            class="w-full text-white py-2 rounded-lg font-mulish font-bold text-[18px]"
+            style="background-color: #1c6d4b"
+          >
+            Buy Now
+          </button>
+        </div>
+
+        <!-- Repeat this product card block for more cards -->
+        <!-- Example: -->
+        <div class="p-4 shadow-sm hover:shadow-lg transition">
+          <div
+            class="bg-gray-200 border border-gray-500 rounded-lg h-[240px] mb-4 p-6"
+          ></div>
+          <h3 class="text-[24px] font-raleway font-semibold text-gray-800 mb-1">
+            Kisan Jaggery
+          </h3>
+          <div class="flex items-center text-red-500 text-sm mb-1">
+            ⭐⭐⭐⭐☆
+            <span class="ml-2 text-gray-500 text-[10px]">117 reviews</span>
+          </div>
+          <p
+            class="text-black font-mulish italic font-semibold text-[24px] mb-4"
+          >
+            ₹ 350/kg
+          </p>
+          <button
+            class="w-full text-white py-2 rounded-lg font-mulish font-bold text-[18px]"
             style="background-color: #1c6d4b"
           >
             Buy Now
@@ -55,20 +92,22 @@
 
         <div class="p-4 shadow-sm hover:shadow-lg transition">
           <div
-            class="bg-gray-200 border border-gray-500 rounded-lg w-full aspect-[379/240] p-6"
+            class="bg-gray-200 border border-gray-500 rounded-lg h-[240px] mb-4 p-6"
           ></div>
-
-          <h3
-            class="text-lg font-semibold font-raleway text-gray-800 mb-1 pt-4"
-          >
+          <h3 class="text-[24px] font-raleway font-semibold text-gray-800 mb-1">
             Kisan Jaggery
           </h3>
           <div class="flex items-center text-red-500 text-sm mb-1">
-            ⭐⭐⭐⭐☆ <span class="ml-2 text-gray-500">117 reviews</span>
+            ⭐⭐⭐⭐☆
+            <span class="ml-2 text-gray-500 text-[10px]">117 reviews</span>
           </div>
-          <p class="text-black font-mulish italic font-normal mb-4">₹ 350/kg</p>
+          <p
+            class="text-black font-mulish italic font-semibold text-[24px] mb-4"
+          >
+            ₹ 350/kg
+          </p>
           <button
-            class="w-full text-white py-2 rounded-lg font-mulish font-bold"
+            class="w-full text-white py-2 rounded-lg font-mulish font-bold text-[18px]"
             style="background-color: #1c6d4b"
           >
             Buy Now
@@ -77,20 +116,22 @@
 
         <div class="p-4 shadow-sm hover:shadow-lg transition">
           <div
-            class="bg-gray-200 border border-gray-500 rounded-lg w-full aspect-[379/240] p-6"
+            class="bg-gray-200 border border-gray-500 rounded-lg h-[240px] mb-4 p-6"
           ></div>
-
-          <h3
-            class="text-lg font-semibold font-raleway text-gray-800 mb-1 pt-4"
-          >
+          <h3 class="text-[24px] font-raleway font-semibold text-gray-800 mb-1">
             Kisan Jaggery
           </h3>
           <div class="flex items-center text-red-500 text-sm mb-1">
-            ⭐⭐⭐⭐☆ <span class="ml-2 text-gray-500">117 reviews</span>
+            ⭐⭐⭐⭐☆
+            <span class="ml-2 text-gray-500 text-[10px]">117 reviews</span>
           </div>
-          <p class="text-black font-mulish italic font-normal mb-4">₹ 350/kg</p>
+          <p
+            class="text-black font-mulish italic font-semibold text-[24px] mb-4"
+          >
+            ₹ 350/kg
+          </p>
           <button
-            class="w-full text-white py-2 rounded-lg font-mulish font-bold"
+            class="w-full text-white py-2 rounded-lg font-mulish font-bold text-[18px]"
             style="background-color: #1c6d4b"
           >
             Buy Now
@@ -99,20 +140,22 @@
 
         <div class="p-4 shadow-sm hover:shadow-lg transition">
           <div
-            class="bg-gray-200 border border-gray-500 rounded-lg w-full aspect-[379/240] p-6"
+            class="bg-gray-200 border border-gray-500 rounded-lg h-[240px] mb-4 p-6"
           ></div>
-
-          <h3
-            class="text-lg font-semibold font-raleway text-gray-800 mb-1 pt-4"
-          >
+          <h3 class="text-[24px] font-raleway font-semibold text-gray-800 mb-1">
             Kisan Jaggery
           </h3>
           <div class="flex items-center text-red-500 text-sm mb-1">
-            ⭐⭐⭐⭐☆ <span class="ml-2 text-gray-500">117 reviews</span>
+            ⭐⭐⭐⭐☆
+            <span class="ml-2 text-gray-500 text-[10px]">117 reviews</span>
           </div>
-          <p class="text-black font-mulish italic font-normal mb-4">₹ 350/kg</p>
+          <p
+            class="text-black font-mulish italic font-semibold text-[24px] mb-4"
+          >
+            ₹ 350/kg
+          </p>
           <button
-            class="w-full text-white py-2 rounded-lg font-mulish font-bold"
+            class="w-full text-white py-2 rounded-lg font-mulish font-bold text-[18px]"
             style="background-color: #1c6d4b"
           >
             Buy Now
@@ -121,47 +164,29 @@
 
         <div class="p-4 shadow-sm hover:shadow-lg transition">
           <div
-            class="bg-gray-200 border border-gray-500 rounded-lg w-full aspect-[379/240] p-6"
+            class="bg-gray-200 border border-gray-500 rounded-lg h-[240px] mb-4 p-6"
           ></div>
-
-          <h3
-            class="text-lg font-semibold font-raleway text-gray-800 mb-1 pt-4"
-          >
+          <h3 class="text-[24px] font-raleway font-semibold text-gray-800 mb-1">
             Kisan Jaggery
           </h3>
           <div class="flex items-center text-red-500 text-sm mb-1">
-            ⭐⭐⭐⭐☆ <span class="ml-2 text-gray-500">117 reviews</span>
+            ⭐⭐⭐⭐☆
+            <span class="ml-2 text-gray-500 text-[10px]">117 reviews</span>
           </div>
-          <p class="text-black font-mulish italic font-normal mb-4">₹ 350/kg</p>
+          <p
+            class="text-black font-mulish italic font-semibold text-[24px] mb-4"
+          >
+            ₹ 350/kg
+          </p>
           <button
-            class="w-full text-white py-2 rounded-lg font-mulish font-bold"
+            class="w-full text-white py-2 rounded-lg font-mulish font-bold text-[18px]"
             style="background-color: #1c6d4b"
           >
             Buy Now
           </button>
         </div>
 
-        <div class="p-4 shadow-sm hover:shadow-lg transition">
-          <div
-            class="bg-gray-200 border border-gray-500 rounded-lg w-full aspect-[379/240] p-6"
-          ></div>
-
-          <h3
-            class="text-lg font-semibold font-raleway text-gray-800 mb-1 pt-4"
-          >
-            Kisan Jaggery
-          </h3>
-          <div class="flex items-center text-red-500 text-sm mb-1">
-            ⭐⭐⭐⭐☆ <span class="ml-2 text-gray-500">117 reviews</span>
-          </div>
-          <p class="text-black font-mulish italic font-normal mb-4">₹ 350/kg</p>
-          <button
-            class="w-full text-white py-2 rounded-lg font-mulish font-bold"
-            style="background-color: #1c6d4b"
-          >
-            Buy Now
-          </button>
-        </div>
+        <!-- Add more product cards here -->
       </div>
     </section>
   </body>
