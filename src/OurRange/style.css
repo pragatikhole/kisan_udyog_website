@@ -22,8 +22,9 @@ header{
 .OurRange h3#title{
     text-align: center;
     font-size: 32px;
+    line-height: 38.4px;
     padding-block: 40px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .products{
     padding: 5px 40px;
@@ -36,6 +37,7 @@ header{
             display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
     width: 245px;
     height: 305px;
 
@@ -50,10 +52,18 @@ header{
 .products .product .img img{
     height: 100%;
     width: 100%;
+    transition: transform 1s;
+    object-fit: cover;
+    object-position: center;
+}
+.products .product .img img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
 }
 .products .product .product-name{
     text-align: center;
     font-size: 32px;
+    line-height: 38.4px;
     padding-block: 10px;
     font-weight: 400;
 }
@@ -74,7 +84,9 @@ footer{
         flex-direction: column;
     }
     .OurRange h3#title{
-    font-size: 30px;
+    font-size: 24px;
+    line-height: 28.8px;
+    font-weight: 500;
 }
 .products .product{
     display: flex;
@@ -88,8 +100,18 @@ footer{
     width: 834px;
 }
 .products .product .product-name{
-    font-size: 24px;
+    font-size: 20px;
+    line-height: 24px;
     font-weight: 400;
+}
+.products .product .img{
+    width: 203px;
+    height: 150px;
+}
+.products .product{
+    width: 235px;
+    height: 213px;
+    
 }
 }
 
