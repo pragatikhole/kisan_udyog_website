@@ -263,7 +263,7 @@ header{
     max-width: 1400px;
 
 }
-.OurRange h3#title{
+.OurRange h4#title{
     text-align: center;
     font-size: 32px;
     padding-block: 40px;
@@ -693,14 +693,18 @@ a{
     font-size: 20px;
 }
 
+     /* mahesh media query start (1440px to 834px start */
+
 .OurRange{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-    .OurRange h3#title{
-    font-size: 30px;
+    .OurRange h4#title{
+    font-size: 24px;
+    line-height: 28.8px;
+    font-weight: 500;
 }
 .products .product{
     display: flex;
@@ -714,9 +718,20 @@ a{
     width: 834px;
 }
 .products .product .product-name{
-    font-size: 24px;
+    font-size: 20px;
+    /* line-height: 24px; */
     font-weight: 400;
 }
+.products .product .img{
+    width: 203px;
+    height: 150px;
+}
+.products .product{
+    width: 235px;
+    height: 213px;
+    
+}
+     /* mahesh media query start (1440px to 834px end */
 
  .product-grid {
           grid-template-columns: repeat(2, 1fr);
@@ -827,7 +842,8 @@ a{
     font-size: 14px;
 }
 
-.OurRange h3#title{
+     /* mahesh media query start (834px to 440 px start */
+     .OurRange h4#title{
     font-size: 20px;
 }
 .products{
@@ -853,6 +869,8 @@ a{
     width: 125px;
     height: 175px;
 }
+
+     /* mahesh media query start (834px to 440 px end */
 
 .product-price, .product-title{
         
