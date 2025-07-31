@@ -299,7 +299,10 @@ footer {
 /* mahesh end */
 
 /* shruti start */
+<<<<<<< HEAD
+=======
 
+>>>>>>> 94ea25de586a42f174c4ed4fa3605de977998969
 .mv-main-container {
   display: flex;
   flex-direction: column;
@@ -348,6 +351,37 @@ footer {
   justify-content: flex-start;
   cursor: pointer;
 }
+<<<<<<< HEAD
+.about-us-card{
+    position: relative;
+    border: 2px solid #F7A1A3;
+    width: 100%;
+    max-width: 1328px;
+    height: 350px;
+    /* background-color: transparent; */
+    border-radius: 20px;
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+.mission-card-container::before {
+    content: ''; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/889f7af6c025f39dc3380f035070d545a149b802.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    opacity: 0.25; 
+    z-index: 1; 
+    
+=======
 .about-us-card {
   position: relative;
   border: 2px solid #f7a1a3;
@@ -376,11 +410,26 @@ footer {
   background-repeat: no-repeat;
   opacity: 0.25;
   z-index: 1;
+>>>>>>> 94ea25de586a42f174c4ed4fa3605de977998969
 }
 .mission-card-container:hover::before {
   filter: blur(1px);
 }
 .vision-card-container::before {
+<<<<<<< HEAD
+    content: ''; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/25c0ba3a05d017157d30d4a9a76aa94be6060263.jpg"); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    opacity: 0.4; 
+    z-index: 1; 
+=======
   content: "";
   position: absolute;
   top: 0;
@@ -393,11 +442,27 @@ footer {
   background-repeat: no-repeat;
   opacity: 0.4;
   z-index: 1;
+>>>>>>> 94ea25de586a42f174c4ed4fa3605de977998969
 }
 .vision-card-container:hover::before {
   filter: blur(3px);
 }
 .about-us-card::before {
+<<<<<<< HEAD
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 1328px;
+    height: 390px;
+    background-image: url("./assets/12c00672306327dbe7e7e634de1af74805de521d.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.25;
+    z-index: 1;
+=======
   content: "";
   position: absolute;
   top: 0;
@@ -411,12 +476,96 @@ footer {
   background-repeat: no-repeat;
   opacity: 0.25;
   z-index: 1;
+>>>>>>> 94ea25de586a42f174c4ed4fa3605de977998969
 }
 .about-us-card:hover::before {
   filter: blur(2px);
 }
 
 .mission-content-area {
+<<<<<<< HEAD
+        position: relative;
+    z-index: 2;
+    color: white;
+    padding: 48px 8px;
+    gap: 2rem;
+    max-width: 100%;
+    /* text-align: left; */
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.vision-content-area {
+        position: relative;
+    z-index: 2;
+    color: white;
+    padding: 32px 8px;
+    max-width: 100%;
+    gap: 2rem;
+    height: -webkit-fill-available;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-us-content-area{
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 32px 16px;
+    max-width: 100%;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: -1.5rem;
+}
+
+.m-h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 36px;
+    color: #1C6D4B;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.v-h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 36px;
+    color: #1C6D4B;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.a-h3{
+    font-family: "Raleway", sans-serif;
+    font-size: 36px;
+    color: #1C6D4B;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-block-start: 28px;
+    margin-block-end: 28px;
+    align-items: center;
+=======
   position: relative;
   z-index: 2;
   color: white;
@@ -494,6 +643,7 @@ footer {
   margin-block-start: 28px;
   margin-block-end: 28px;
   align-items: center;
+>>>>>>> 94ea25de586a42f174c4ed4fa3605de977998969
 }
 
 .target-icon {
@@ -518,6 +668,23 @@ footer {
   margin-top: 0rem;
   border: none;
 }
+<<<<<<< HEAD
+.m-p,.v-p{
+    font-size: 22px;
+    padding-left: 24px;
+    padding-right: 24px;
+    line-height: 28.8px;
+    color: black;
+    font-weight: 300;
+    font-family: "Mulish", sans-serif;
+}
+.about-us-content-area li{
+    font-family: "Mulish", sans-serif;
+    font-size: 22px;
+    line-height: 24px;
+    color: black;
+    margin-bottom: 10px; 
+=======
 .m-p,
 .v-p {
   font-size: 20px;
@@ -534,6 +701,7 @@ footer {
   line-height: 24px;
   color: black;
   margin-bottom: 10px;
+>>>>>>> 94ea25de586a42f174c4ed4fa3605de977998969
 }
 .about-us-content-area ul {
   padding-left: 5rem;
@@ -565,6 +733,27 @@ footer {
   }
   .mission-card-container::before {
     height: -webkit-fill-available;
+<<<<<<< HEAD
+    }
+    .about-us-card{
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+    }
+    .m-h1,.v-h2,.a-h3 {
+        font-size: 32px;
+    }
+    .a-h3 {
+      font-size: 32px;
+      margin: 1%;
+    }
+    .m-p,.v-p {
+        font-size: 20px;
+        line-height: 28.5px;
+    }
+    .about-us-content-area li{
+       font-size: 20px;
+       line-height: 28.8px; 
+=======
   }
   .vision-card-container::before {
     height: -webkit-fill-available;
@@ -590,6 +779,7 @@ footer {
     font-size: 20px;
     line-height: 28.8px;
   }
+>>>>>>> 94ea25de586a42f174c4ed4fa3605de977998969
 }
 
 @media (min-width: 440px) and (max-width: 833px) {
@@ -656,17 +846,33 @@ footer {
     z-index: 2;
     color: white;
     padding: 14px 4px;
+    gap: 1rem;
     max-width: 100%;
     text-align: left;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 8px;
   }
   .vision-content-area {
+<<<<<<< HEAD
+   position: relative;
+    z-index: 2;
+    color: white;
+    padding: 14px 4px;
+    max-width: 100%;
+    text-align: left;
+    gap: 1rem;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+  }
+  .about-us-content-area{
+=======
+>>>>>>> 94ea25de586a42f174c4ed4fa3605de977998969
     position: relative;
     z-index: 2;
     color: white;
     padding: 14px 4px;
     max-width: 100%;
+    gap: 1rem;
     text-align: left;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 8px;
@@ -810,7 +1016,6 @@ footer {
     margin-top: -0.2rem;
   }
 }
-
 /* shruti end */
 
 /* pragati start */
@@ -945,6 +1150,334 @@ footer {
 
 /* shruti start */
 
+<<<<<<< HEAD
+
+
+
+
+
+
+
+
+/* For very small screens / landscape mobile (optional, fine-tuning) */
+
+
+/* shruti end */
+
+/* navbar start */
+
+header{
+    height: 147px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+}
+.logo{
+    height: 86px;
+    width: 145px;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+    opacity: 60%;
+}
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    column-gap: 41px;
+}
+header nav ul li{
+    font-size: 24px;
+    font-family: "Mulish";
+}
+header .profile i{
+   font-size: 25px
+}
+
+nav li{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* navbar end */
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 834px) and (max-width: 1439px){
+     .hero img{
+        
+        opacity: 0.8;
+     }
+
+     .hero h1{
+        font-size: 60px;
+        max-width: 709px;
+        max-height: 171px;
+     }
+
+     .cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* width: 834px; */
+        height: auto !important;
+        gap: 24px;
+        align-items: center;
+        justify-content: center;
+     }
+
+     .card-container{
+        width: 372px;
+        height: 287px;
+        padding: 24px 16px;
+     }
+
+     .card-container img{
+        height: 92px;
+        width: 56px;
+        margin-bottom: 40px;
+     }
+
+     .card-container h1{
+        font-size: 28px;
+        
+     }
+     
+     .card-container p{
+        font-size: 18px;
+     }
+
+     .caption, .caption p{
+        font-size: 44px !important;
+        line-height: 3.5rem !important;
+     }
+
+     .slider{
+        height: 320px;
+     }
+
+     .faq-inner {
+    width: 834px;
+  }
+
+  .faq-item {           
+  border-radius: 16px;
+  padding: 24px 18px;
+  width: 748px;
+}
+.faq-question {
+  width: auto;
+  font-size: 22px;
+}
+.faq-answer {
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+     /* mahesh media query start (1440px to 834px start */
+
+.OurRange{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .OurRange h4#title{
+    font-size: 24px;
+    line-height: 28.8px;
+    font-weight: 500;
+}
+.products .product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    width: 834px;
+}
+.products .product .product-name{
+    font-size: 20px;
+    /* line-height: 24px; */
+    font-weight: 400;
+}
+.products .product .img{
+    width: 203px;
+    height: 150px;
+}
+.products .product{
+    width: 235px;
+    height: 213px;
+    
+}
+     /* mahesh media query start (1440px to 834px end */
+
+ .product-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+.product-price, .product-title {
+        
+        font-size: 22px;
+        
+      }
+
+      .main-container {
+       display: flex;
+       flex-direction: column;
+       max-width: 1440px;
+    }
+    .container { /* Adjust gap within the top section wrapper */
+        display: flex;
+        flex-direction: column;
+    }
+    .mission-card-container,.vision-card-container {
+    max-width: 743px;
+    height: 260px;
+}
+.about-us-card::before{
+    height: 504px;
+}
+.about-us-card{
+    max-width: fit-content;
+    height: -webkit-fill-available;
+}
+      
+}
+
+@media screen and (min-width: 440px) and (max-width: 833px){
+     .hero img{
+        opacity: 0.8;
+     }
+
+     .hero h1{
+        font-size: 32px;
+        line-height: 40px;
+        width: 326px;
+        height: 171px;
+     }
+
+     .caption, .caption p{
+        font-size: 32px !important;
+        line-height: 2.5rem !important;
+     }
+
+     .cards{
+        /* flex-direction: column; */
+        max-width: 90%;
+        height: auto;
+        gap: 24px;
+        align-items: center;
+     }
+
+     .card-container{
+        width: 80%;
+        
+        padding: 24px 16px;
+     }
+
+     .card-container img{
+        height: 40px;
+        width: 40px;
+        margin-bottom: 10px;
+     }
+
+     .card-container h1{
+        font-size: 10px;
+        line-height: 14.4px;
+        letter-spacing: -2%;
+        
+     }
+     
+     .card-container p{
+        line-height: 9.6px;
+        letter-spacing: -1%;
+        font-weight: 300;
+        font-size: 6px;
+     }
+
+      .slider{
+        height: 220px;
+     }
+
+     .faq-inner {
+    width: 440px;
+  }
+
+  .faq-item {           
+  border-radius: 16px;
+  padding: 12px 16px;
+  width: 394px;
+}
+.faq-question {
+  width: auto;
+  font-size: 16px;
+}
+.faq-heading {
+  font-size: 20px;
+}
+.faq-answer {
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+     /* mahesh media query start (834px to 440 px start */
+     .OurRange h4#title{
+    font-size: 20px;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 393px;
+}
+.products .product .img{
+    width: 100px;
+    height: 103px;
+}
+.products .product .product-name{
+    font-size: 14px;
+    font-weight: 400;
+}
+.products .product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 125px;
+    height: 175px;
+}
+
+     /* mahesh media query start (834px to 440 px end */
+
+.product-price, .product-title{
+        
+        font-size: 16px;
+        
+      }
+
+        .mission-card-container,.vision-card-container {
+    max-width: 390px;
+    height: fit-content;
+}
+.about-us-card::before{
+        height: -webkit-fill-available;
+}
+.about-us-card{
+        max-width: 390px;
+    height: 400px;
+}
+h1,h2 {
+    font-size: 22px;
+    color: #1C6D4B;
+=======
 .main-container {
   display: flex;
   flex-direction: column;
@@ -1379,6 +1912,7 @@ p {
   h2 {
     font-size: 18px;
     color: #1c6d4b;
+>>>>>>> 94ea25de586a42f174c4ed4fa3605de977998969
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -1779,12 +2313,18 @@ a {
     font-size: 16px;
     padding-left: 8px;
     padding-right: 8px;
+<<<<<<< HEAD
+}
+.mission-content-area {
+        position: relative;
+=======
   }
   .mission-content-area {
     position: relative;
+>>>>>>> 94ea25de586a42f174c4ed4fa3605de977998969
     z-index: 2;
     color: white;
-    padding: 35px 30px;
+    padding: 32px 8px;
     max-width: 100%;
     text-align: left;
     background-color: rgba(0, 0, 0, 0.25);
@@ -1794,7 +2334,7 @@ a {
     position: relative;
     z-index: 2;
     color: white;
-    padding: 35px 30px;
+    padding: 32px 8px;
     max-width: 100%;
     text-align: left;
     background-color: rgba(0, 0, 0, 0.25);
@@ -1804,7 +2344,7 @@ a {
     position: relative;
     z-index: 2;
     color: white;
-    padding: 46px 16px;
+    padding: 32px 16px;
     max-width: 100%;
     text-align: left;
     background-color: rgba(0, 0, 0, 0.25);
