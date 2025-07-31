@@ -820,32 +820,16 @@ footer {
   margin: auto;
   padding: 40px 16px;
 }
-
 .productCard-heading {
   font-size: 32px;
-
   text-align: center;
   font-family: "Raleway", sans-serif;
   margin-bottom: 32px;
 }
-
-.productCard-card-title {
-  font-size: 28px;
-  font-weight: 600;
-  text-align: left;
-  color: #14532d;
-  font-family: "Raleway", sans-serif;
-  margin-bottom: 32px;
-}
-h2.productCard-title {
-  text-align: center !important ;
-}
-
 .productCard-grid {
   display: grid;
   gap: 24px;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
+  grid-template-columns: 1fr;
 }
 
 .productCard-card {
@@ -859,23 +843,21 @@ h2.productCard-title {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.productCard-card-image {
-  width: 379px;
+.productCard-card-image img {
+  width: 100%;
+  max-width: 379px; /* added */
   height: 240px;
-  background-color: #e5e5e5;
-  border: 1px solid #888;
+  object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 16px;
-  padding: 24px;
+  margin: auto; /* optional to center image */
 }
 
 .productCard-card-title {
-  font-size: 24px;
+  font-size: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   color: #333;
   margin-bottom: 4px;
-  align-items: left;
 }
 
 .productCard-rating {
@@ -893,12 +875,11 @@ h2.productCard-title {
 }
 
 .productCard-price {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 600;
   font-style: italic;
   color: #000;
   margin-bottom: 16px;
-  text-align: left;
 }
 
 .productCard-buy-btn {
@@ -918,53 +899,45 @@ h2.productCard-title {
   background-color: #155e3f;
 }
 
-@media (max-width: 1440px) {
-  .productCard-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .productCard-card-image {
-    width: 203px;
-    height: 169px;
-  }
-  .productCard-card-title {
-    font-size: 20px;
-  }
-  .productCard-price {
-    font-size: 20px;
-  }
-  .productCard-buy-btn {
-    font-size: 20px;
-    width: 203px;
-    height: 47;
-  }
-  .productCard-card {
-    width: 235px;
-    height: 387px;
-  }
-}
-
-@media (max-width: 834px) {
+@media (min-width: 440px) {
   .productCard-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .productCard-card-image {
-    width: 137px;
-    height: 125px;
+}
+
+@media (min-width: 834px) {
+  .productCard-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
+  .productCard-card-image img {
+    max-width: 379px;
+  }
+}
+
+/* 834px and up */
+@media (min-width: 834px) {
   .productCard-card-title {
-    font-size: 16px;
+    font-size: 20px;
   }
+
   .productCard-price {
-    font-size: 16px;
+    font-size: 20px;
   }
   .productCard-buy-btn {
-    font-size: 16px;
-    width: 137px;
-    height: 32px;
+    font-size: 20px;
   }
-  .productCard-card {
-    width: 169px;
-    height: 311px;
+}
+
+/* 1440px and up */
+@media (min-width: 1440px) {
+  .productCard-card-title {
+    font-size: 24px;
+  }
+  .productCard-price {
+    font-size: 24px;
+  }
+  .productCard-buy-btn {
+    font-size: 24px;
   }
 }
 
