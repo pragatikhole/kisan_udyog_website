@@ -1,3 +1,6 @@
+
+/* mahesh our Event start */
+
 * {
     margin: 0;
     padding: 0;
@@ -57,13 +60,215 @@ article .proImg img{
     line-height: 19.2px;
     font-family: 'Mulish', sans-serif;
 }
+article .product-data .title1{
+    margin-block: 18px;
+}
+/* mahesh our Event end */
 
-@media screen and (max-width:1440px) {
+
+/* pragati our bestseller start */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 16px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  color: #14532d;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 32px;
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 440px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 834px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  height: 240px;
+  background-color: #e5e5e5;
+  border: 1px solid #888;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 24px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.rating {
+  color: #ef4444;
+  font-size: 14px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.review-count {
+  margin-left: 8px;
+  font-size: 10px;
+  color: #888;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 600;
+  font-style: italic;
+  color: #000;
+  margin-bottom: 16px;
+}
+
+.buy-btn {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #1c6d4b;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Mulish", sans-serif;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.buy-btn:hover {
+  background-color: #155e3f;
+}
+
+/* pragati our bestseller end */
+
+
+
+/* mahesh header start*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: relative;
+    height: 147px;
+
+}
+/* Profile styling */
+.profile i {
+  font-size: 25px;
+  display: block;
+}
+
+.logo {
+  height: 86px;
+  width: 145px;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+  opacity: 60%;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  column-gap: 41px;
+}
+
+header nav ul li {
+  font-size: 24px;
+  font-family: "Mulish";
+}
+
+header .header-icons i {
+  font-size: 25px;
+}
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* space between profile and toggle */
+}
+/* Hide menu toggle on desktop */
+.menu-toggle {
+  display: none;
+  /* font-size: 28px; */
+  cursor: pointer;
+  
+}
+
+/* Show toggle on mobile */
+@media screen and (max-width: 834px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    width: 100%;
+    z-index: 5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul {
+    flex-direction: column;
+    row-gap: 16px;
+    padding: 20px;
+  }
+
+  nav.active {
+    display: block;
+  }
+}
+
+/* mahesh header end */
+
+
+
+@media screen and (max-width:1439px) {
    .events {
         display: flex;
         align-items: center;
         justify-content: center;
     }  
+    article .product-data .title1{
+    margin-block: 8px;
+}
     .event-row {
         width: 731px;
     }
@@ -79,6 +284,7 @@ article .proImg img{
     width: 190px;
     height: 184px;
 }
+
 .product-data h3{
     font-size: 12px;
     line-height: 14.4px;
@@ -109,7 +315,7 @@ article .proImg img{
 }
 }
 
-@media screen and (max-width:834px) {
+@media screen and (max-width:833px) {
     .events {
         display: flex;
         align-items: center;
