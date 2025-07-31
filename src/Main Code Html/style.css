@@ -6,7 +6,7 @@
 }
 
 body {
-  max-width: 1440px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -94,6 +94,8 @@ body {
   justify-content: flex-start;
   align-items: center;
   overflow: hidden;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
 }
 .slider {
   position: relative;
@@ -179,13 +181,12 @@ body {
 }
 
 .faq-heading {
-  font-size: 32px;
-  font-family: Raleway, sans-serif;
   text-align: center;
+  font-family: Raleway, sans-serif;
+  font-size: 32px;
+  padding-block: 40px;
+  font-weight: 600;
   color: #4d4d4d;
-  font-weight: 500;
-  line-height: 38px;
-  margin: 40px 0;
 }
 
 .faq-item {
@@ -257,9 +258,11 @@ header {
 }
 .OurRange h4#title {
   text-align: center;
+  font-family: Raleway, sans-serif;
   font-size: 32px;
   padding-block: 40px;
   font-weight: 600;
+  color: #4d4d4d;
 }
 .products {
   padding: 5px 40px;
@@ -292,9 +295,9 @@ header {
 }
 .products .product .product-name {
   text-align: center;
-  font-size: 32px;
+  font-size: 28px;
   padding-block: 10px;
-  font-weight: 400;
+  font-weight: 100;
 }
 
 /* mahesh end */
@@ -824,12 +827,12 @@ header {
     padding: 0.2rem 0.6rem;
     margin-top: -0.2rem;
   }
-.about-us-card {
+  .about-us-card {
     width: fit-content;
     height: fit-content;
   }
-.about-us-card::before {
-        height: -webkit-fill-available;
+  .about-us-card::before {
+    height: -webkit-fill-available;
   }
   .about-us-card {
     width: 390px;
@@ -846,15 +849,17 @@ header {
   padding: 40px 16px;
 }
 .productCard-heading {
-  font-size: 32px;
   text-align: center;
-  font-family: "Raleway", sans-serif;
-  margin-bottom: 32px;
+  font-family: Raleway, sans-serif;
+  font-size: 32px;
+  padding-block: 40px;
+  font-weight: 600;
+  color: #4d4d4d;
 }
 .productCard-grid {
   display: grid;
   gap: 24px;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit minmax(3, 1fr));
 }
 
 .productCard-card {
@@ -862,6 +867,7 @@ header {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
+  width: 455px;
 }
 
 .productCard-card:hover {
@@ -869,11 +875,10 @@ header {
 }
 
 .productCard-card-image img {
-  width: 100%;
-  max-width: 379px; /* added */
-  height: 240px;
-  object-fit: cover;
   border-radius: 8px;
+  width: 100%; /* Full width of the card */
+  height: 280px; /* Increase height */
+  object-fit: cover;
   margin: auto; /* optional to center image */
 }
 
@@ -901,8 +906,7 @@ header {
 
 .productCard-price {
   font-size: 16px;
-  font-weight: 600;
-  font-style: italic;
+  font-weight: 200;
   color: #000;
   margin-bottom: 16px;
 }
@@ -928,6 +932,11 @@ header {
   .productCard-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .productCard-card-image img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
 }
 
 @media (min-width: 834px) {
@@ -936,6 +945,14 @@ header {
   }
   .productCard-card-image img {
     max-width: 379px;
+  }
+  .productCard-card-image img {
+    width: 100%;
+    max-width: fit-content; /* added */
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 16px;
   }
 }
 
@@ -951,18 +968,43 @@ header {
   .productCard-buy-btn {
     font-size: 20px;
   }
+  .productCard-card-image img {
+    width: 100%;
+    max-width: fit-content; /* added */
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
 }
 
 /* 1440px and up */
 @media (min-width: 1440px) {
   .productCard-card-title {
     font-size: 24px;
+    margin-bottom: 8px;
   }
   .productCard-price {
     font-size: 24px;
   }
   .productCard-buy-btn {
     font-size: 24px;
+  }
+  .productCard-card-image img {
+    border-radius: 8px;
+    width: 100%; /* Full width of the card */
+    height: 280px; /* Increase height */
+    object-fit: cover;
+    margin-bottom: 16px; /* optional to center image */
+  }
+
+  .productCard-rating {
+    margin-bottom: 12px;
+  }
+  .productCard-grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit minmax(600px, 1fr));
   }
 }
 
@@ -1092,6 +1134,7 @@ a {
     font-size: 24px;
     line-height: 28.8px;
     font-weight: 500;
+    font-family: "Raleway";
   }
   .products .product {
     display: flex;
