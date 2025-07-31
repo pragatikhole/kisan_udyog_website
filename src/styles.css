@@ -311,7 +311,8 @@ footer{
 
 /* shruti start */
 
-.main-container {
+
+.mv-main-container {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -323,7 +324,7 @@ footer{
     padding: 3rem 3rem;
     box-sizing: border-box;
 }
-.container{
+.m-container{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -333,7 +334,7 @@ footer{
     position: relative;
     /* width: 100%; */
     max-width: 652px;
-    height: 278px;
+    height: 290px;
     /* background-color: transparent; */
     border-radius: 20px;
     /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
@@ -348,7 +349,7 @@ footer{
     position: relative;
     /* width: 100%; */
     max-width: 652px;
-    height: 278px;
+    height: 290px;
     /* background-color: transparent; */
     border-radius: 20px;
     /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
@@ -364,7 +365,7 @@ footer{
     border: 2px solid #F7A1A3;
     width: 100%;
     max-width: 1328px;
-    height: 278px;
+    height: 290px;
     /* background-color: transparent; */
     border-radius: 20px;
     /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
@@ -432,7 +433,7 @@ footer{
     position: relative;
     z-index: 2;
     color: white;
-    padding: 30px 8px;
+    padding: 32px 8px;
     max-width: 100%;
     /* text-align: left; */
     background-color: rgba(0, 0, 0, 0.25);
@@ -472,7 +473,7 @@ footer{
     align-items: center;
 }
 
-h1 {
+.m-h1 {
     font-family: "Raleway", sans-serif;
     font-size: 32px;
     color: #1C6D4B;
@@ -483,7 +484,7 @@ h1 {
     padding-left: 24px;
     padding-right: 24px;
 }
-h2 {
+.v-h2 {
     font-family: "Raleway", sans-serif;
     font-size: 32px;
     color: #1C6D4B;
@@ -494,7 +495,7 @@ h2 {
     padding-left: 24px;
     padding-right: 24px;
 }
-h3{
+.a-h3{
     font-family: "Raleway", sans-serif;
     font-size: 32px;
     color: #1C6D4B;
@@ -530,7 +531,7 @@ h3{
     margin-top: 0rem;
     border: none;
 }
-p {
+.m-p,.v-p{
     font-size: 20px;
     padding-left: 24px;
     padding-right: 24px;
@@ -555,21 +556,27 @@ p {
 
 
 
-@media (min-width: 993px) and (max-width: 1439px) {
-    .main-container {
+@media (min-width: 834px) and (max-width: 1439px) {
+    .mv-main-container {
        display: flex;
        flex-direction: column;
-       max-width: 1440px;
+       max-width: 1439px;
        gap: 24px;
     }
-    .container { 
+    .m-container { 
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
     }
-    .mission-card-container,.vision-card-container {
-        max-width: 490px;
-        height: 290px;
+    .mission-card-container {
+        max-width: -webkit-fill-available;
+        height: -webkit-fill-available;
+    }
+    .vision-card-container {
+        max-width: -webkit-fill-available;
+        height: -webkit-fill-available;
+    }
+    .mission-content-area{
+        padding: 52px 0px;
     }
     .mission-card-container::before {
     height: -webkit-fill-available;
@@ -581,13 +588,13 @@ p {
     height: -webkit-fill-available;
     }
     .about-us-card{
-        max-width: 1010px;
-        height: 320px;
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
     }
-    h1,h2,h3 {
+    .m-h1,.v-h2,.a-h3 {
         font-size: 32px;
     }
-    p{
+    .m-p,.v-p {
         font-size: 20px;
         line-height: 28.5px;
     }
@@ -597,80 +604,12 @@ p {
 }
 } 
 
-
-/* For Tablets (Portrait) / Smaller Desktops: max-width: 992px */
-@media (max-width: 992px) {
-    .main-container {
-       display: flex;
-       flex-direction: column;
-       /* max-width: 1440px; */
-       padding: 1.2rem;
-    }
-    .container {
-        display: flex;
-        flex-direction: row;
-    }
-    .mission-card-container {
-        max-width: 490px;
-        height: fit-content;
-    }
-    .vision-card-container {
-        max-width: 490px;
-        height: fit-content;
-    }
-    .mission-card-container::before {
-    height: -webkit-fill-available;
-    }
-    .vision-card-container::before {
-    height: -webkit-fill-available;
-    }
-    .about-us-card::before{
-    height: -webkit-fill-available;
-    }
-    .about-us-card{
-        max-width: 1010px;
-        height: fit-content;
-    }
-    .mission-content-area {
-    position: relative;
-    z-index: 2;
-    color: white;
-    padding: 32px 8px;
-    max-width: 100%;
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    }
-    .vision-content-area {
-    position: relative;
-    z-index: 2;
-    color: white;
-    padding: 32px 8px;
-    max-width: 100%;
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    }
-    .about-us-content-area{
-    position: relative;
-    z-index: 2;
-    color: white;
-    padding: 32px 16px;
-    max-width: 100%;
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    }
-} 
-
-
-/* For Mobile Phones: max-width: 600px */
-@media (max-width: 600px) {
-    .main-container{
+@media (min-width: 440px) and (max-width: 833px) {
+    .mv-main-container{
         padding: 1.2rem;
         gap: 1.5rem;
     }
-    .container{
+    .m-container{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -692,7 +631,7 @@ p {
     max-width: 520px;
     height: fit-content;
     }
-    h1,h2 {
+    .m-h1,.v-h2 {
     font-size: 18px;
     color: #1C6D4B;
     font-weight: 600;
@@ -700,9 +639,9 @@ p {
     align-items: center;
     padding-left: 24px;
     padding-right: 24px;
-    margin: 0%;
+    margin-bottom: 1%;
   }
-  h3{
+  .a-h3{
     font-size: 18px;
     color: #1C6D4B;
     font-weight: 600;
@@ -713,7 +652,7 @@ p {
     margin-block-start: 25px; 
     margin-block-end: 25px;
   }
-  p{
+  .m-p,.v-p {
     font-size: 15px;
     padding-left: 24px;
     padding-right: 24px;
@@ -779,9 +718,15 @@ p {
 }
 
 /* For very small screens / landscape mobile (optional, fine-tuning) */
-@media (max-width: 440px) {
-    .main-container{
+@media (max-width: 439px) {
+    .mv-main-container{
         padding: 1.2rem;
+        gap: 1.5rem;
+    }
+    .m-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .mission-card-container,.vision-card-container {
     max-width: 390px;
@@ -800,7 +745,7 @@ p {
     max-width: 390px;
     height: fit-content;
     }
-    h1,h2 {
+    .m-h1,.v-h2 {
     font-size: 18px;
     color: #1C6D4B;
     font-weight: 600;
@@ -809,7 +754,7 @@ p {
     padding-left: 8px;
     padding-right: 8px;
     }
-    h3{
+    .a-h3{
     font-size: 18px;
     color: #1C6D4B;
     font-weight: 600;
@@ -820,7 +765,7 @@ p {
     margin-block-start: 25px; 
     margin-block-end: 25px;
     }
-    p{
+    .m-p,.v-p {
     font-size: 15px;
     padding-left: 8px;
     padding-right: 8px;
@@ -866,6 +811,10 @@ p {
     padding-left: 2rem;
     padding-right: 2.2rem;
     margin: 0;
+    }
+    .info-icon{
+        padding: 0.2rem 0.6rem;
+        margin-top: -0.2rem;
     }
 }
 
