@@ -1013,43 +1013,93 @@ header {
 /* navbar start */
 
 header {
-  height: 147px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  background-color: white;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: relative;
+    height: 147px;
+
 }
+/* Profile styling */
+.profile i {
+  font-size: 25px;
+  display: block;
+}
+
 .logo {
   height: 86px;
   width: 145px;
 }
+
 .logo img {
   height: 100%;
   width: 100%;
   opacity: 60%;
 }
+
 header nav ul {
+    margin: 0;
+    padding: 0;
   display: flex;
+  align-items: center;
   list-style-type: none;
   column-gap: 41px;
 }
+
 header nav ul li {
   font-size: 24px;
   font-family: "Mulish";
 }
-header .profile i {
-  font-size: 25px;
-}
-
-nav li {
-  cursor: pointer;
-}
-
-a {
+header nav ul li a {
   text-decoration: none;
   color: black;
+  /* transition: color 0.3s ease; */
 }
 
+header .header-icons i {
+  font-size: 25px;
+}
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* space between profile and toggle */
+}
+/* Hide menu toggle on desktop */
+.menu-toggle {
+  display: none;
+  /* font-size: 28px; */
+  cursor: pointer;
+  
+}
+
+/* Show toggle on mobile */
+@media screen and (max-width: 834px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    width: 100%;
+    z-index: 5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul {
+    flex-direction: column;
+    row-gap: 16px;
+    padding: 20px;
+  }
+
+  nav.active {
+    display: block;
+  }
+}
 /* navbar end */
 
 /* MEDIA QUERIES */
