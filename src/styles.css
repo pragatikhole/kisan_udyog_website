@@ -815,85 +815,157 @@ footer {
 
 /* pragati start */
 
-section.bestsellers {
-  max-width: 1280px;
-  margin: 0 auto;
+.productCard-container {
+  max-width: 1440px;
+  margin: auto;
   padding: 40px 16px;
 }
-.section-title {
+
+.productCard-heading {
+  font-size: 32px;
+
   text-align: center;
-  color: #064e3b;
-  font-size: 24px;
-  font-weight: 600;
+  font-family: "Raleway", sans-serif;
   margin-bottom: 32px;
 }
-.product-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 24px;
+
+.productCard-card-title {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: left;
+  color: #14532d;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 32px;
 }
-.product-card {
+h2.productCard-title {
+  text-align: center !important ;
+}
+
+.productCard-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.productCard-card {
   padding: 16px;
   border-radius: 8px;
-  /* box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
 }
-.product-card:hover {
+
+.productCard-card:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
-.product-image {
-  background-color: #e5e7eb;
-  border: 1px solid #6b7280;
-  border-radius: 10px;
-  width: 100%;
-  padding-top: 63.3%; /* aspect ratio 379/240 */
-  position: relative;
+
+.productCard-card-image {
+  width: 379px;
+  height: 240px;
+  background-color: #e5e5e5;
+  border: 1px solid #888;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 24px;
 }
-.product-title {
+
+.productCard-card-title {
   font-size: 24px;
-  font-weight: 600;
   font-family: "Raleway", sans-serif;
-  color: #1f2937;
-  margin-top: 16px;
+  font-weight: 600;
+  color: #333;
   margin-bottom: 4px;
+  align-items: left;
 }
-.product-rating {
-  display: flex;
-  align-items: center;
-  color: #dc2626;
+
+.productCard-rating {
+  color: #ef4444;
   font-size: 14px;
   margin-bottom: 4px;
+  display: flex;
+  align-items: center;
 }
-.product-rating span {
+
+.productCard-review-count {
   margin-left: 8px;
-  color: #6b7280;
+  font-size: 10px;
+  color: #888;
 }
-.product-price {
-  font-family: "Mulish", sans-serif;
-  font-style: italic;
-  font-weight: 400;
+
+.productCard-price {
   font-size: 24px;
+  font-weight: 600;
+  font-style: italic;
   color: #000;
   margin-bottom: 16px;
+  text-align: left;
 }
-.buy-button {
+
+.productCard-buy-btn {
   width: 100%;
-  padding: 12px;
-  font-family: "Mulish", sans-serif;
-  font-weight: bold;
-  color: white;
+  padding: 10px 0;
   background-color: #1c6d4b;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Mulish", sans-serif;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 16px;
 }
 
-.product-grid {
-  grid-template-columns: repeat(3, 1fr);
+.productCard-buy-btn:hover {
+  background-color: #155e3f;
 }
-.section-title {
-  font-size: 32px;
+
+@media (max-width: 1440px) {
+  .productCard-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .productCard-card-image {
+    width: 203px;
+    height: 169px;
+  }
+  .productCard-card-title {
+    font-size: 20px;
+  }
+  .productCard-price {
+    font-size: 20px;
+  }
+  .productCard-buy-btn {
+    font-size: 20px;
+    width: 203px;
+    height: 47;
+  }
+  .productCard-card {
+    width: 235px;
+    height: 387px;
+  }
+}
+
+@media (max-width: 834px) {
+  .productCard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .productCard-card-image {
+    width: 137px;
+    height: 125px;
+  }
+  .productCard-card-title {
+    font-size: 16px;
+  }
+  .productCard-price {
+    font-size: 16px;
+  }
+  .productCard-buy-btn {
+    font-size: 16px;
+    width: 137px;
+    height: 32px;
+  }
+  .productCard-card {
+    width: 169px;
+    height: 311px;
+  }
 }
 
 /* pragati end */
