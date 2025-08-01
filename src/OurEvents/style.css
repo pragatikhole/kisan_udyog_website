@@ -89,7 +89,6 @@ article .product-data .title1 {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
-  width: 455px;
 }
 
 .productCard-card:hover {
@@ -150,7 +149,7 @@ article .product-data .title1 {
   background-color: #155e3f;
 }
 
-@media (min-width: 440px) {
+@media (min-width: 439px) {
   .productCard-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -191,9 +190,6 @@ article .product-data .title1 {
     font-size: 20px;
   }
   .productCard-card-image img {
-    width: 100%;
-    max-width: fit-content; /* added */
-    height: 240px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 16px;
