@@ -649,7 +649,7 @@ header {
     margin-bottom: 1%;
   }
   .a-h3 {
-    font-size: 20px;
+    font-size: 24px;
     color: #1c6d4b;
     font-weight: 600;
     display: flex;
@@ -659,7 +659,7 @@ header {
     margin-block-start: 25px;
     margin-block-end: 25px;
     margin-bottom: 2%;
-    margin-top: 5%;
+    margin-top: 0.3%;
   }
   .m-p,
   .v-p {
@@ -784,6 +784,7 @@ header {
     font-size: 15px;
     padding-left: 8px;
     padding-right: 8px;
+    margin-top: -1.5rem;
   }
   .mission-content-area {
     position: relative;
@@ -825,7 +826,7 @@ header {
   .about-us-content-area ul {
     padding-left: 2rem;
     padding-right: 2.2rem;
-    margin: 0;
+    margin-top: -1.5rem;
   }
   .info-icon {
     padding: 0.2rem 0.6rem;
@@ -839,7 +840,7 @@ header {
     height: -webkit-fill-available;
   }
   .about-us-card {
-    width: 390px;
+    width: fit-content;
     height: fit-content;
   }
 }
